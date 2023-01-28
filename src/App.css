@@ -13,26 +13,26 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: circle;
+}
+
+li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
+  align-items: left;
+  gap: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+  color: red;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:checked + span {
+  text-decoration: line-through;
+}
+
+.active-link {
+  color: red;
 }
